@@ -14,3 +14,8 @@ spec:
 #list view => kubectl get pod | kubectl get pod -o wide
 #detail list => kubectl describe pod [pod-name]
 #port forward => kubectl port-forward [pod-name] [access-port]:[pod-port] => exam : kubectl port-forward nginx 8888:80
+#delete =>
+#  - kubectl delete pod [pod-name]
+#  - kubectl delete pod [pod-name0],[pod-name1],[pod-name2]
+#delete with label => kubectl delete pod -l [key]=[value]
+#delete with namespace => kubectl delete pod --all --namespace [namespace-name]
