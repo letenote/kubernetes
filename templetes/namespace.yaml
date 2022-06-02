@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: namespace-name
+
+#create => kubectl create -f [namespace-name].yaml
+#create pod with namespace => kubectl create -f [namespace-name].yaml --namespace [namespace-name]
+#list view pod with namespace => kubectl get pod --namespace [namespace-name]
+#delete namespace(auto delete pod with same namespace) => kubectl delete namespace [namespace-name]
