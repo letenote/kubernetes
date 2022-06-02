@@ -25,3 +25,5 @@ spec:
 #  - kubectl get pod -l [key]!=[value]
 #  - kubectl get pod -l '[key] in ([value0],[value1])
 #  - kubectl get pod -l '[key] notin ([value0],[value1])
+#  - kubectl get pod -l [key0],[key1]=[value1]
+#  - kubectl get pod -l [key0]=[value0],[key1]=[value1]
