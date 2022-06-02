@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-name
+  labels:
+    label-key1: label-value1
+    label-key2: label-value2
+    label-key3: label-value3
+spec:
+  containers:
+    - name: container-name
+      image: image-name
+      ports:
+        - containerPort: 80
+
+#create => kubectl create -f [pod-name].yaml
+#list view => kubectl get pod --show-labels
+#change label =>
+#  - kubectl label pod [pod-name] [key]=[value]
+#  - kubectl label pod [pod-name] [key]=[value] --overwrite
+#query =>
+#  - kubectl get pod -l [key]
+#  - kubectl get pod -l [key]=[value]
+#  - kubectl get pod -l '![key]'
+#  - kubectl get pod -l [key]!=[value]
+#  - kubectl get pod -l '[key] in ([value0],[value1])
+#  - kubectl get pod -l '[key] notin ([value0],[value1])
