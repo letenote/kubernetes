@@ -11,6 +11,8 @@ spec:
 
 
 #create => kubectl create -f pod-name.yaml
+#exec => kubectl exec -it [pod-name] -- /bin/sh
+#logs => kubectl logs [pod-name]
 #list view => kubectl get pod | kubectl get pod -o wide
 #detail list => kubectl describe pod [pod-name]
 #port forward => kubectl port-forward [pod-name] [access-port]:[pod-port] => exam : kubectl port-forward nginx 8888:80
